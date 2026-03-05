@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dynamic Webpage Example</title>
+
+<style>
+body{
+    font-family: Poppins;
+    text-align: center;
+    margin-top: 75px;
+}
+
+button{
+    padding:10px 20px;
+    font-size:16px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h2>Dynamic Webpage Using JavaScript & DOM</h2>
+
+<p id="content">Click the button to update this content.</p>
+
+<button onclick="updateContent()">Click Me</button>
+
+<script>
+
+function updateContent()
+{
+    document.getElementById("content").innerHTML =
+    "The content has been updated dynamically using JavaScript DOM!";
+}
+
+</script>
+
+</body>
+</html>
